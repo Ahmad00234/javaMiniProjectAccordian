@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/214594255c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>FAQ's</h1>
+    <div class="accordian">
+      <div class="question">
+        <h4>1. What is JavaScript?</h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+
+      <div class="answer">
+        <p>
+          A high-level, interpreted programming language called JavaScript makes
+          it possible to create interactive web pages and online apps with
+          dynamic functionality. Commonly referred to as the universal language,
+          Javascript is primarily used by developers for front-end and back-end
+          work.
+        </p>
+      </div>
+    </div>
+    <div class="accordian">
+      <div class="question">
+        <h4>2. What are the different data types in JavaScript?</h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+
+      <div class="answer">
+        <p>
+          JavaScript has six primitive data types:
+          <br />
+          1. Number
+          <br />
+          2. String
+          <br />
+          3. Boolean
+          <br />
+          4. Null
+          <br />
+          5. Undefined
+          <br />
+          6. Symbol
+          <br /><br />
+          It also has two compound data types:
+          <br />
+          1. Object
+          <br />
+          2. Array
+        </p>
+      </div>
+    </div>
+    <div class="accordian">
+      <div class="question">
+        <h4>3. What is hoisting in JavaScript?</h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+
+      <div class="answer">
+        <p>
+          Hoisting is a JavaScript concept that refers to the process of moving
+          declarations to the top of their scope. This means that variables and
+          functions can be used before they are declared, as long as they are
+          declared before they are used in a function.
+          <br />
+          For example, the following code will print "Hello, world!" even though
+          the greeting variable is not declared until after the console.log()
+          statement.
+        </p>
+      </div>
+    </div>
+    <div class="accordian">
+      <div class="question">
+        <h4>4. What is the difference between null and undefined?</h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+
+      <div class="answer">
+        <p>
+          null is an assignment value that represents no value or an empty
+          value, while undefined is a variable that has been declared but not
+          assigned a value.
+        </p>
+      </div>
+    </div>
+    <div class="accordian">
+      <div class="question">
+        <h4>5. What is the purpose of the “this” keyword in JavaScript?</h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+
+      <div class="answer">
+        <p>
+          The this keyword refers to the object that is executing the current
+          function or method. It allows access to object properties and methods
+          within the context of that object.
+        </p>
+      </div>
+    </div>
+    <div class="accordian">
+      <div class="question">
+        <h4>
+          6. What is the difference between == and === operators in JavaScript?
+        </h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+
+      <div class="answer">
+        <p>
+          The equality == operator is a comparison operator that compares two
+          values and returns true if they are equal. The strict equality ===
+          operator is also a comparison operator, but it compares two values and
+          returns true only if they are equal and of the same type.
+          <br />
+          For example, the following code will return true, because the values
+          of the x and y variables are equal.
+        </p>
+      </div>
+    </div>
+    <div class="accordian">
+      <div class="question">
+        <h4>
+          7.What is the difference between “var” and “let” keywords in
+          JavaScript?
+        </h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+
+      <div class="answer">
+        <p>
+          The var and let keywords are both used to declare variables in
+          JavaScript. However, there are some key differences between the two
+          keywords.
+          <br />
+          The var keyword declares a global variable, which means that the
+          variable can be accessed from anywhere in the code. The let keyword
+          declares a local variable, which means that the variable can only be
+          accessed within the block of code where it is declared.
+        </p>
+      </div>
+    </div>
+    <div class="accordian">
+      <div class="question">
+        <h4>8. What are closures in JavaScript?</h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+
+      <div class="answer">
+        <p>
+          Closures (closureFn) are functions that have access to variables from
+          an outer function even after the outer function has finished
+          executing. They “remember” the environment in which they were created.
+        </p>
+      </div>
+    </div>
+    <div class="accordian">
+      <div class="question">
+        <h4>9. What is implicit type coercion in JavaScript?</h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+
+      <div class="answer">
+        <p>
+          Implicit type coercion is a JavaScript concept that refers to the
+          automatic conversion of a value from one type to another. In
+          JavaScript, this conversion follows a priority order that typically
+          begins with strings, then numbers, and finally booleans. If you try to
+          add a string to a number, JavaScript will implicitly coerce the number
+          to a string before performing the addition operation because strings
+          have the highest priority in type coercion.
+          <br />
+          For example, when you combine the number 5 with the string '10' using
+          the addition operator, the result is the string '510'. This occurs
+          because JavaScript will implicitly convert the number 5 to a string
+          following the priority of coercion, and then concatenate it to the
+          string '10'.
+        </p>
+      </div>
+    </div>
+    <div class="accordian">
+      <div class="question">
+        <h4>10.How can you clone an object in JavaScript?</h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+
+      <div class="answer">
+        <p>
+          There are multiple ways to clone an object in JavaScript. One common
+          method is using the Object.assign() method or the spread operator
+          (...).
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
